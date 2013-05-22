@@ -24,13 +24,7 @@ class Calculator
 	*/
 	public function plus($number)
 	{
-		if(!empty($number))
-		{
-			if(is_int($number))
-			{
-				return $this->lastNumber += $number;
-			}
-		}
+		return !empty($number) && is_int($number)?$this->lastNumber += $number:null;
 	}
 
 	/*
@@ -40,13 +34,7 @@ class Calculator
 	*/
 	public function minus($number)
 	{
-		if(!empty($number))
-		{
-			if(is_int($number))
-			{
-				return $this->lastNumber -= $number;
-			}
-		}
+		return !empty($number) && is_int($number)?$this->lastNumber -= $number:null;
 	}
 
 	/*
@@ -56,13 +44,7 @@ class Calculator
 	*/
 	public function multiple($number)
 	{
-		if(!empty($number))
-		{
-			if(is_int($number))
-			{
-				return $this->lastNumber *= $number;
-			}
-		}
+		return !empty($number) && is_int($number)?$this->lastNumber *= $number:null;
 	}
 
 	/*
@@ -72,13 +54,7 @@ class Calculator
 	*/
 	public function divide($number)
 	{
-		if(!empty($number))
-		{
-			if(is_int($number))
-			{
-				return $this->lastNumber /= $number;
-			}
-		}
+		return !empty($number) && is_int($number)?$this->lastNumber /= $number:null;
 	}
 
 	/*
