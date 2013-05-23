@@ -42,14 +42,14 @@ class DomainParser implements ArrayAccess
 	}
 	public function offsetSet($offset, $value) {
 		return true;
-    }
-    public function offsetExists($offset) {
-        return isset($this->domainInfo[$offset]);
-    }
-    public function offsetUnset($offset) {
-        return true;
-    }
+	}
+	public function offsetExists($offset) {
+		return isset($this->domainInfo[$offset]);
+	}
+	public function offsetUnset($offset) {
+		return true;
+	}
 	public function offsetGet($offset) {
-        return isset($this->domainInfo[$offset]) ? $this->domainInfo[$offset] : null;
-    }
+		return isset($this->domainInfo[$offset]) ? $this->domainInfo[$offset] : null;
+	}
 }
