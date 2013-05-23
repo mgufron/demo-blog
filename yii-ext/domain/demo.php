@@ -4,7 +4,7 @@
 include 'DomainParser.php';
 
 /* domain that you want to parse */
-$domain = 'this.is.my.domain.com';
+$domain = 'localhost';
 
 $domainParser = new DomainParser($domain);
 
