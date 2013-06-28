@@ -1,13 +1,13 @@
 <?php
-/*
-Calculator Class sederhana. Hanya untuk demo
-@author Mochamad Gufron 
-@link http://www.mgufron.com
+/**
+*Calculator Class sederhana. Hanya untuk demo
+* @author Mochamad Gufron 
+* @link http://www.mgufron.com
 */
 class Calculator
 {
-	/*
-	@var $lastNumber untuk penyimpanan angka sementara dalam operasi kalkulator
+	/**
+	* @var $lastNumber untuk penyimpanan angka sementara dalam operasi kalkulator
 	*/
 	private $lastNumber=0;
 
@@ -19,7 +19,8 @@ class Calculator
 	*/
 	public function __construct($number=0)
 	{
-		return $this->lastNumber = $number;
+		$this->lastNumber = $number;
+		return $this;
 	}
 
 	/*
@@ -29,7 +30,8 @@ class Calculator
 	*/
 	public function plus($number)
 	{
-		return !empty($number) && is_int($number)?$this->lastNumber += $number:null;
+		!empty($number) && is_int($number)?$this->lastNumber += $number:null;
+		return $this;
 	}
 
 	/*
@@ -39,7 +41,8 @@ class Calculator
 	*/
 	public function minus($number)
 	{
-		return !empty($number) && is_int($number)?$this->lastNumber -= $number:null;
+		!empty($number) && is_int($number)?$this->lastNumber -= $number:null;
+		return $this;
 	}
 
 	/*
@@ -49,7 +52,8 @@ class Calculator
 	*/
 	public function multiple($number)
 	{
-		return !empty($number) && is_int($number)?$this->lastNumber *= $number:null;
+		!empty($number) && is_int($number)?$this->lastNumber *= $number:null;
+		return $this;
 	}
 
 	/*
@@ -59,7 +63,8 @@ class Calculator
 	*/
 	public function divide($number)
 	{
-		return !empty($number) && is_int($number)?$this->lastNumber /= $number:null;
+		!empty($number) && is_int($number)?$this->lastNumber /= $number:null;
+		return $this;
 	}
 
 	/*
