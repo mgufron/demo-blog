@@ -27,7 +27,7 @@ class DomainParser implements ArrayAccess
 	*/
 	private function parseDomain($domain)
 	{
-		$pattern = '(?(?<subdomain>.*)\.)?(?<domain>(.*)(?(?<extension>\.(.*)))?)$';
+		$pattern = '^(?<subdomain>([a-z0-9]+)\.)(?<domain>([a-z0-9-]+).(?<extension>([a-z]+)(\.([a-z]{2,5}))))?';
 		preg_match('/'.$pattern.'/',$domain, $result);
 		return $result;
 	}
