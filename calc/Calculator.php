@@ -1,4 +1,9 @@
 <?php
+/*
+Calculator Class sederhana. Hanya untuk demo
+@author Mochamad Gufron 
+@link http://www.mgufron.com
+*/
 class Calculator
 {
 	/*
